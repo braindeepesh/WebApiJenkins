@@ -2,14 +2,14 @@ pipeline {
     agent any
     environment {
         AZURE_CREDENTIALS_ID = 'azure-service-principal'
-        RESOURCE_GROUP = 'rg-jenkins'
-        APP_SERVICE_NAME = 'webapijenkins8372648'
+        RESOURCE_GROUP = 'dotnetrg'
+        APP_SERVICE_NAME = 'api7687687687687'
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'master', url: 'https://github.com/Cloud-Authority/WebApiJenkins.git'
+                git branch: 'master', url: 'https://github.com/braindeepesh/WebApiJenkins.git'
             }
         }
 
